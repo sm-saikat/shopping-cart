@@ -32,7 +32,7 @@ class Products {
     async getProducts() {
 
         try {
-            let result = await fetch("products.json")
+            let result = await fetch("./products.json")
             let data = await result.json()
             let products = data.items
 
